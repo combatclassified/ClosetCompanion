@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="edit_text_size" type="id" />
+    <item name="image_view_placeholder" type="id" />
+    <item name="text_view_name_label" type="id" />
+    <item name="edit_text_name" type="id" />
+    <item name="text_view_type_label" type="id" />
+    <item name="edit_text_type" type="id" />
+    <item name="text_view_size_label" type="id" />
+    <item name="text_view_color_label" type="id" />
+    <item name="edit_text_color" type="id" />
+    <item name="text_view_status_label" type="id" />
+</resources>

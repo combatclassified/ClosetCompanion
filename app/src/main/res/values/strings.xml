@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ClosetCompanion</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile</string>
+    <string name="feed">Feed</string>
+    <string name="settings">Settings</string>
+    <string name="title_activity_details">Details</string>
+    <string name="closet">Closet</string>
+    <string name="name_label_text" />
+    <string name="name_hint_text" />
+    <string name="type_label_text" />
+    <string name="type_hint_text" />
+    <string name="size_label_text" />
+    <string name="size_hint_text" />
+    <string name="color_label_text" />
+    <string name="color_hint_text" />
+    <string name="status_label_text" />
+</resources>

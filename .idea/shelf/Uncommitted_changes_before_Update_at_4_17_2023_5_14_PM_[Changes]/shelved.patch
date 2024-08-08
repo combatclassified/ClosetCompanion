@@ -1,0 +1,49 @@
+Index: app/src/main/java/com/example/closetcompanion/fragments/ProfileFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.closetcompanion.fragments\r\n\r\nimport android.content.res.Configuration\r\nimport android.os.Build\r\nimport android.os.Bundle\r\nimport androidx.fragment.app.Fragment\r\nimport android.view.LayoutInflater\r\nimport android.view.View\r\nimport android.view.ViewGroup\r\nimport android.widget.TextView\r\nimport androidx.annotation.RequiresApi\r\nimport com.example.closetcompanion.R\r\nimport com.example.closetcompanion.models.User\r\n\r\n// TODO: Rename parameter arguments, choose names that match\r\n// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER\r\nprivate const val ARG_PARAM1 = \"param1\"\r\nprivate const val ARG_PARAM2 = \"param2\"\r\n\r\n/**\r\n * A simple [Fragment] subclass.\r\n * Use the [ProfileFragment.newInstance] factory method to\r\n * create an instance of this fragment.\r\n */\r\nclass ProfileFragment : Fragment() {\r\n    // TODO: Rename and change types of parameters\r\n    private var param1: User? = null\r\n    private var param2: String? = null\r\n\r\n\r\n    override fun onCreate(savedInstanceState: Bundle?) {\r\n        super.onCreate(savedInstanceState)\r\n        arguments?.let {\r\n            param1 = it.getParcelable(\"user\", User::class.java)!!\r\n            param2 = it.getString(ARG_PARAM2)\r\n        }\r\n    }\r\n\r\n    override fun onCreateView(\r\n        inflater: LayoutInflater, container: ViewGroup?,\r\n        savedInstanceState: Bundle?\r\n    ): View? {\r\n        val bundle = arguments\r\n        // Inflate the layout for this fragment\r\n        return inflater.inflate(R.layout.fragment_profile, container, false)\r\n    }\r\n\r\n    companion object {\r\n        /**\r\n         * Use this factory method to create a new instance of\r\n         * this fragment using the provided parameters.\r\n         *\r\n         * @param param1 Parameter 1.\r\n         * @param param2 Parameter 2.\r\n         * @return A new instance of fragment ProfileFragment.\r\n         */\r\n        // TODO: Rename and change types and number of parameters\r\n        @JvmStatic\r\n        fun newInstance(param1: String, param2: String) =\r\n            ProfileFragment().apply {\r\n                arguments = Bundle().apply {\r\n                    putString(ARG_PARAM1, param1)\r\n                    putString(ARG_PARAM2, param2)\r\n                }\r\n            }\r\n    }\r\n\r\n    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {\r\n        super.onViewCreated(view, savedInstanceState)\r\n        val usernameTextField = view.findViewById<TextView>(R.id.username_text_field)\r\n        val nameTextField = view.findViewById<TextView>(R.id.name_text_field)\r\n        val emailTextField = view.findViewById<TextView>(R.id.email_text_field)\r\n        val dobTextField = view.findViewById<TextView>(R.id.dob_text_field)\r\n\r\n        val name = param1!!.first_name + \" \" + param1!!.last_name\r\n        usernameTextField.text = param1!!.username\r\n        nameTextField.text = name\r\n        emailTextField.text = param1!!.email_address\r\n        dobTextField.text =  param1!!.dob\r\n    }\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/closetcompanion/fragments/ProfileFragment.kt b/app/src/main/java/com/example/closetcompanion/fragments/ProfileFragment.kt
+--- a/app/src/main/java/com/example/closetcompanion/fragments/ProfileFragment.kt	
++++ b/app/src/main/java/com/example/closetcompanion/fragments/ProfileFragment.kt	
+@@ -72,11 +72,11 @@
+         val emailTextField = view.findViewById<TextView>(R.id.email_text_field)
+         val dobTextField = view.findViewById<TextView>(R.id.dob_text_field)
+ 
+-        val name = param1!!.first_name + " " + param1!!.last_name
+-        usernameTextField.text = param1!!.username
+-        nameTextField.text = name
+-        emailTextField.text = param1!!.email_address
+-        dobTextField.text =  param1!!.dob
++        //val name = param1!!.first_name + " " + param1!!.last_name
++        //usernameTextField.text = param1!!.username
++        //nameTextField.text = name
++        //emailTextField.text = param1!!.email_address
++        //dobTextField.text =  param1!!.dob
+     }
+ 
+ }
+\ No newline at end of file
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>buildscript {\r\n    dependencies {\r\n        classpath 'com.google.gms:google-services:4.3.15'\r\n    }\r\n}// Top-level build file where you can add configuration options common to all sub-projects/modules.\r\nplugins {\r\n    id 'com.android.application' version '7.4.1' apply false\r\n    id 'com.android.library' version '7.4.1' apply false\r\n    id 'org.jetbrains.kotlin.android' version '1.8.0' apply false\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/build.gradle b/build.gradle
+--- a/build.gradle	
++++ b/build.gradle	
+@@ -4,7 +4,7 @@
+     }
+ }// Top-level build file where you can add configuration options common to all sub-projects/modules.
+ plugins {
+-    id 'com.android.application' version '7.4.1' apply false
+-    id 'com.android.library' version '7.4.1' apply false
++    id 'com.android.application' version '7.4.2' apply false
++    id 'com.android.library' version '7.4.2' apply false
+     id 'org.jetbrains.kotlin.android' version '1.8.0' apply false
+ }
+\ No newline at end of file

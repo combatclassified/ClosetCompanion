@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "405044845282",
+    "project_id": "final-project-cs481",
+    "storage_bucket": "final-project-cs481.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:405044845282:android:91ab9a46fcc0ac3b1adcbb",
+        "android_client_info": {
+          "package_name": "com.example.closetcompanion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "405044845282-esam64h6gpig42goq7sok0pjjrlbrkjn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtFnHr_4Mt0vDFyOOgYxaTJFlDLjeeWq4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "405044845282-esam64h6gpig42goq7sok0pjjrlbrkjn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
